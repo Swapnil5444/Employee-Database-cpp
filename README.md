@@ -7,15 +7,16 @@ It provides a simple yet effective platform for managing employee data — allow
 
 🎯 Objectives
 
-To demonstrate C++ and MySQL database connectivity using the MySQL C API.
+1.To demonstrate C++ and MySQL database connectivity using the MySQL C API.
 
-To perform basic CRUD operations (Create, Read, Update, Delete) on employee records.
+2.To perform basic CRUD operations (Create, Read, Update, Delete) on employee records.
 
-To understand query construction, error handling, and resource management in a database-connected environment.
+3.To understand query construction, error handling, and resource management in a database-connected environment.
 
-To offer a lightweight and educational example for students and developers learning database integration at a low level.
+4.To offer a lightweight and educational example for students and developers learning database integration at a low level.
 
 🏗️ System Architecture
+
 1. Database Layer
 
 Database Name: payroll_db
@@ -24,24 +25,28 @@ Table Name: employee
 
 Schema:
 
-Field	Type	Description
-id	INT (Primary Key, Auto Increment)	Unique Employee ID
-name	VARCHAR(100)	Employee Name
-position	VARCHAR(100)	Employee Job Title
-salary	DECIMAL(10,2)	Employee Salary
+| Field      | Type                              | Description        |
+| ---------- | --------------------------------- | ------------------ |
+| `id`       | INT (Primary Key, Auto Increment) | Unique Employee ID |
+| `name`     | VARCHAR(100)                      | Employee Name      |
+| `position` | VARCHAR(100)                      | Employee Job Title |
+| `salary`   | DECIMAL(10,2)                     | Employee Salary    |
+
+
+
 2. Application Layer
 
 The application uses the following MySQL C functions for database communication:
 
-mysql_init() – Initializes a MySQL object.
+1.mysql_init() – Initializes a MySQL object.
 
-mysql_real_connect() – Connects the C++ program to the MySQL server.
+2.mysql_real_connect() – Connects the C++ program to the MySQL server.
 
-mysql_query() – Executes SQL statements.
+3.mysql_query() – Executes SQL statements.
 
-mysql_store_result() – Retrieves query results.
+4.mysql_store_result() – Retrieves query results.
 
-mysql_fetch_row() – Iterates through rows of results.
+5.mysql_fetch_row() – Iterates through rows of results.
 
 These APIs allow low-level control over database operations while maintaining efficient performance.
 
@@ -55,12 +60,14 @@ These APIs allow low-level control over database operations while maintaining ef
 ✅ Clean Console Interface for User Interaction
 
 💻 Technologies Used
-Component	Technology
-Programming Language	C++
-Database	MySQL (via MySQL Workbench)
-Connector	MySQL C API (mysql.h)
-IDE/Compiler	Code::Blocks / Visual Studio / g++
-OS Compatibility	Windows / Linux
+| Component                | Technology                         |
+| ------------------------ | ---------------------------------- |
+| **Programming Language** | C++                                |
+| **Database**             | MySQL (via MySQL Workbench)        |
+| **Connector**            | MySQL C API (`mysql.h`)            |
+| **IDE/Compiler**         | Code::Blocks / Visual Studio / g++ |
+| **OS Compatibility**     | Windows / Linux                    |
+
 📂 Project Structure
 EmployeePayrollManagement/
 │
